@@ -1,0 +1,152 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f9f9ff;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: rgba(155, 89, 182, 0.95); /* tím */
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .inner-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .inner-logo img {
+  height: 50px;
+}
+
+.header .inner-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.header .inner-menu a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.header .inner-menu a:hover {
+  color: #ffeb3b;
+}
+
+/* Section one (Hero) */
+.section-one {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  background: url("/bai1/background.png") no-repeat center center/cover;
+}
+
+/* Overlay mờ */
+.section-one::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(76, 0, 130, 0.55); /* overlay tím */
+  z-index: 0;
+}
+
+.section-one .inner-wrap {
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.section-one .inner-title {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffeb3b;
+}
+
+.section-one .desc {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+/* Nút */
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.button-two {
+  background: #8e44ad;
+  color: white;
+  box-shadow: 0 4px 12px rgba(142, 68, 173, 0.4);
+}
+
+.button-two:hover {
+  background: #732d91;
+  transform: translateY(-3px);
+}
+
+/* Section two */
+.section-two {
+  padding: 80px 0;
+  background: #f4f0fa;
+}
+
+.section-two .inner-box {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-two .inner-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(142, 68, 173, 0.3);
+}
+
+.section-two .inner-icon img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.section-two .inner-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #8e44ad;
+}
+
+.section-two .inner-desc {
+  font-size: 16px;
+  color: #555;
+}
+ 
